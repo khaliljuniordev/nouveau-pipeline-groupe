@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notre Pipeline DevOps</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 800px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        h1 {
+            color: #333;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+        .info {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        .info p {
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+        .badge {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            margin: 5px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>🚀 Notre Pipeline DevOps</h1>
+        
+        <div class="info">
+            <h2>Groupe: Ibra - Moustapha - Alioune</h2>
+            <p><strong>👤 Membres:</strong> Ibrahima, Moustapha, Alioune</p>
+            <p><strong>🌐 Domaine:</strong> ibra-moustapha-alioune.sn</p>
+            <p><strong>📅 Date:</strong> <span id="date"></span></p>
+            <p><strong>🔢 Build #:</strong> <span id="build">local</span></p>
+        </div>
+        
+        <div>
+            <span class="badge">🐳 Docker</span>
+            <span class="badge">🤖 Jenkins</span>
+            <span class="badge">📦 Git</span>
+            <span class="badge">☁️ GitHub</span>
+        </div>
+        
+        <div class="footer">
+            <p>Généré automatiquement par Jenkins</p>
+        </div>
+    </div>
+    
+    <script>
+        document.getElementById('date').textContent = new Date().toLocaleString();
+    </script>
+</body>
+</html>
